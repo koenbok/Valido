@@ -193,17 +193,6 @@ class ArrayProperty extends Property
 
 valido = {}
 
-# for method in [
-# 	"getValue", 
-# 	"BooleanProperty", 
-# 	"StringProperty", 
-# 	"IntegerProperty", 
-# 	"FloatProperty"
-# 	"ObjectProperty", 
-# 	"ArrayProperty"]
-# 	
-# 	valido[]
-
 valido.getValue = getValue
 valido.BooleanProperty = BooleanProperty
 valido.StringProperty = StringProperty
@@ -223,28 +212,7 @@ valido.properties =
 valido.property = (type, options, contents) ->
 	return new valido.properties[type](options, contents)
 
-# if exports
-_.extend exports, valido
-
-
-
-		
-############################################################
-# SCRATCH
-
-# assert = require "assert"
-# sys = require "util"
-# 
-# testSchema = (p, value, errorKeys) ->
-# 	errors = []
-# 	p.validate(value, errors)
-# 	assert.deepEqual(_.keys(errors), errorKeys, sys.inspect(errors))
-# 
-# p = new BooleanProperty()
-# 
-# testSchema(p, true, [])
-# testSchema(p, false, [])
-#  
-# testSchema(p, "yes", ["."])
-# testSchema(p, 0, ["."])
-# testSchema(p, 22.33, ["."])
+if window?
+	window.valido = valido
+else
+	_.extend exports, valido

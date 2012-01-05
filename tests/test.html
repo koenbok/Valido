@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<script type="text/javascript" src="http://documentcloud.github.com/underscore/underscore-min.js"></script>	
+	<script type="text/javascript" src="../build/valido.js"></script>
+</head>
+<body>
+	<script type="text/javascript" charset="utf-8">
+		
+		var p = new valido.StringProperty();
+		
+		console.log(p.validate("koen")); // Return "koen"
+		console.log(p.validate(null)); // Return empty string
+		p.validate(1); // Throw error
+		
+	</script>
+</body>
+</html>

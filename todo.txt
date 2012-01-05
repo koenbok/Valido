@@ -4,4 +4,4 @@
 - More advanced properties (RegexProperty)
 - Docs
 - More advanced unit tests
-- Browser compatibility
++ Browser compatibility
