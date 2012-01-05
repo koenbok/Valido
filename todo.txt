@@ -1,0 +1,7 @@
+- Better and more unit tests
+- Nice simple structured schema layout in the form of a dictionary that can be used with json
+- More property options for specific properties (string.maxLength etc.)
+- More advanced properties (RegexProperty)
+- Docs
+- More advanced unit tests
+- Browser compatibility
