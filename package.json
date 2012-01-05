@@ -1,0 +1,11 @@
+{
+	"name": "Valido",
+	"version": "0.0.1",
+	"description": "Simple Structured Validation Framework",
+	"author": "Koen Bok",
+	"dependencies": {
+		"coffee-script": ">=1.0.1",
+		"nodeunit": ">=0.5.0",
+		"underscore": ">=1.1.7"
+	}
+}
